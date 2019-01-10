@@ -7,11 +7,12 @@ E = Emrakul
 H = Hamilar Depth
 X = Surgical Extraction
 S = Serum Powder
-I = Shelldock Isle
+D = Shelldock Isle
 A = Shadowborn Apostle
 
 """
 import csv
+import math
 from random import shuffle
 
 E, H, X, S, D = 4, 3, 4, 4, 4
