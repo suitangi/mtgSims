@@ -46,8 +46,8 @@ def newDeck():
 
 def mulligan(hs):
     global deck
-    shuffle(deck)
-    return hs - 1
+    deck.extend(hand);
+    return hs
 
 
 """
@@ -58,7 +58,7 @@ S = Serum (no combo pieces exiled)
 E= Emrakul Exiled (from Serum)
 D = Shelldock Exiled (from Serum)
 B = Emrakul and Shelldock Exiled (from Serum)
-0 = Surgical Not found after 2 Mulligan
+0 = Surgical Not found after restricted number of Mulligan
 
 hs = handsize
 """
